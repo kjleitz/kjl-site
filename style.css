@@ -4,6 +4,9 @@
 /*****************/
 /*****************/
 
+html {
+    background-image: url(seigaiha.png)
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -13,6 +16,11 @@ body {
 #content {
     margin: 6rem auto 5rem auto;
     max-width: 50rem;
+    background-color: white;
+    padding: 1rem 3rem 3rem 3rem;
+    /*border: solid #ddd;*/
+    box-shadow: 0px 0px 5px 1px #999;
+    border-radius: 3px;
 }
 
 h2 {
@@ -270,10 +278,14 @@ a:hover {
 /*******************/
 /*******************/
 
-@media (orientation: portrait), (max-width: 700px) {
+@media (orientation: portrait), (max-width: 800px) {
     
     .hide_mobile {
         display: none;
+    }
+    
+    #content {
+        padding: 0.5rem 1rem 3rem 1rem;
     }
     
 }
