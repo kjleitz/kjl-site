@@ -31,14 +31,18 @@ p {
     line-height: 1.5;
 }
 
-a {
-    color: #555;
+#content a {
+    color: #0095dd;
     text-decoration: none;
     transition: color 0.1s ease;
 }
 
-a:hover {
-    color: #000;
+#content a:hover {
+    color: #03a;
+}
+
+#content a:visited {
+    color: #03a;
 }
 
 
@@ -72,7 +76,15 @@ a:hover {
     padding: 0 0.5rem;
 }
 
-#logo h1 {
+#top_bar_content a {
+    color: #555;
+}
+
+#top_bar_content a:hover {
+    color: #000;
+}
+
+h1 {
     float: left;
     font-size: 4rem;
     font-weight: bold;
@@ -85,7 +97,7 @@ a:hover {
     transition: font-size 0.3s, line-height 0.3s;
     }
 
-#logo h1.shrunk {
+h1.shrunk {
     /* scroll shrink */
     font-size: 2rem;
     line-height: 2.5rem;
@@ -130,6 +142,7 @@ a:hover {
 
 #bottom_bar a {
     color: #eee;
+    text-decoration: none;
 }
 
 
