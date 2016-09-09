@@ -67,7 +67,7 @@ a:hover {
 }
 
 #top_bar_content {
-    max-width: 50rem;
+    max-width: 56rem;
     margin: 0 auto;
     padding: 0 0.5rem;
 }
@@ -200,7 +200,7 @@ a:hover {
     font-size: 1.4em;
     opacity: 0;
     /*margin-left: -0.1em;*/
-    margin-top: -0.05em;
+    margin-top: -0.1em;
     color: #5884e2;
 }
 
