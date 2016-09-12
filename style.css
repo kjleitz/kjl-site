@@ -71,11 +71,12 @@ p {
 
 #top_bar.shrunk {
     /* scroll shrink */
-    height: 2.5rem;
+    height: 3rem;
 }
 
 #top_bar_content {
     max-width: 56rem;
+    height: inherit;
     margin: 0 auto;
     padding: 0 0.5rem;
 }
@@ -106,7 +107,7 @@ h1 {
 h1.shrunk {
     /* scroll shrink */
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 
 
@@ -119,7 +120,7 @@ h1.shrunk {
 #top_nav {
     float: right;
     color: #777;
-    line-height: 2.5;
+    line-height: 3;
 }
 
 #top_nav a {
