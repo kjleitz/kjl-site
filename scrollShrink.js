@@ -4,7 +4,7 @@ function shrinkOnScroll(event) {
     var shrinkList = document.getElementsByClassName("shrinkable");
     if(distY >= shrinkThreshold) {
         for(var i = 0; i < shrinkList.length; i++) {
-            var nShrunk = shrinkList[i].className.search("shrunk");
+            var nShrunk = shrinkList[i].className.indexOf("shrunk");
             if(nShrunk === -1) {
                 shrinkList[i].className += " shrunk";
             }
@@ -12,7 +12,7 @@ function shrinkOnScroll(event) {
     }
     if(distY < shrinkThreshold) {
         for(var i = 0; i < shrinkList.length; i++) {
-            var nShrunk = shrinkList[i].className.search("shrunk");
+            var nShrunk = shrinkList[i].className.indexOf("shrunk");
             if(nShrunk > -1) {
                 shrinkList[i].className = shrinkList[i].className.replace(" shrunk", "");
             }
