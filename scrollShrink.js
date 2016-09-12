@@ -1,22 +1,11 @@
 function shrinkOnScroll(event) {
     var distY = window.pageYOffset || document.documentElement.scrollTop;
     var shrinkThreshold = 10;
-    var shrinkList = document.getElementsByClassName("shrinkable");
     if(distY >= shrinkThreshold) {
-        for(var i = 0; i < shrinkList.length; i++) {
-            var nShrunk = shrinkList[i].className.indexOf("shrunk");
-            if(nShrunk === -1) {
-                shrinkList[i].className += " shrunk";
-            }
-        }
+        addClassByClassName("shrinkable", "shrunk");
     }
     if(distY < shrinkThreshold) {
-        for(var i = 0; i < shrinkList.length; i++) {
-            var nShrunk = shrinkList[i].className.indexOf("shrunk");
-            if(nShrunk > -1) {
-                shrinkList[i].className = shrinkList[i].className.replace(" shrunk", "");
-            }
-        }
+        remClassByClassName("shrinkable", "shrunk");
     }
 }
 

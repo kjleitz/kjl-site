@@ -7,17 +7,17 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,900">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://use.fontawesome.com/f5fcaff6f1.js"></script>
-        <script src="scrollShrink.js"></script>
     </head>
     <body>
         <header id="top_bar" class="shrinkable">
             <div id="top_bar_content">
                 <a id="logo" href="index.html"><h1 class="shrinkable">kjl</h1></a>
-                <nav id="top_nav">
-                    <a href="index.html">home</a>
-                    <a href="#">about</a>
-                    <a href="#">archive</a>
-                    <a href="#">graveyard</a>
+                <i class="fa fa-bars shrinkable" id="burger_icon"></i>
+                <nav class="shrinkable collapsible" id="top_nav">
+                    <a href="index.html"><i class="fa fa-home fa-fw"></i>home</a>
+                    <a href="#"><i class="fa fa-user fa-fw"></i>about</a>
+                    <a href="#"><i class="fa fa-book fa-fw"></i>archive</a>
+                    <a href="#"><i class="fa fa-phone fa-fw"></i>contact</a>
                 </nav>
             </div>
         </header>
@@ -76,30 +76,33 @@
                         <i class="fa fa-envelope fa-stack-1x" id="env_icon"></i>
                         <i class="fa fa-paper-plane fa-stack-1x" id="plane_icon"></i>
                     </span>
-                    <span class="hide_mobile">email&nbsp;&nbsp;&nbsp;</span>
+                    <span class="hide_tablet">email&nbsp;&nbsp;&nbsp;</span>
                 </a>
                 <a href="#" id="facebook_link">
                     <span class="fa-stack">
                         <i class="fa fa-square fa-stack-1x" id="fbo_icon"></i>
                         <i class="fa fa-facebook-f fa-stack-1x" id="fbf_icon"></i>
                     </span>
-                    <span class="hide_mobile">facebook&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="hide_tablet">facebook&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </a>
                 <a href="#" id="twitter_link">
                     <span class="fa-stack">
                         <i class="fa fa-twitter fa-stack-1x" id="twitter_icon"></i>
                         <i class="fa fa-music fa-stack-1x" id="twnote_icon"></i>
                     </span>
-                    <span class="hide_mobile">twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="hide_tablet">twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </a>
                 <a href="#" id="github_link">
                     <span class="fa-stack">
                         <i class="fa fa-github fa-stack-1x" id="git_icon"></i>
                         <i class="fa fa-github-alt fa-stack-1x" id="gha_icon"></i>
                     </span>
-                    <span class="hide_mobile">github</span>
+                    <span class="hide_tablet">github</span>
                 </a>
             </nav>
         </footer>
+        <script src="classControls.js"></script>
+        <script src="scrollShrink.js"></script>
+        <script src="navMenu.js"></script>
     </body>
 </html>
