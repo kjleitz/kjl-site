@@ -34,6 +34,8 @@ p {
 #content a {
     color: #0095dd;
     text-decoration: none;
+    -webkit-transition: color 0.1s ease;
+    -moz-transition: color 0.1s ease;
     transition: color 0.1s ease;
 }
 
@@ -62,6 +64,8 @@ p {
     z-index: 999;
     
     /* scroll shrink */
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
     transition: height 0.3s;
 }
 
@@ -94,6 +98,8 @@ h1 {
     line-height: 5rem;
     
     /* scroll shrink */
+    -webkit-transition: font-size 0.3s, line-height 0.3s;
+    -moz-transition: font-size 0.3s, line-height 0.3s;
     transition: font-size 0.3s, line-height 0.3s;
     }
 
@@ -118,6 +124,10 @@ h1.shrunk {
 
 #top_nav a {
     text-decoration: none;
+}
+
+#top_nav a + a:before {
+    content: " | ";
 }
 
 
@@ -171,6 +181,12 @@ h1.shrunk {
 }
 
 .fa {
+    -webkit-transition: color 0.25s,
+                        opacity 0.25s,
+                        transform 0.25s;
+    -moz-transition: color 0.25s,
+                     opacity 0.25s,
+                     transform 0.25s;
     transition: color 0.25s,
                 opacity 0.25s,
                 transform 0.25s;
@@ -182,6 +198,9 @@ h1.shrunk {
 #plane_icon {
     opacity: 0;
     /*margin-left: -1em;*/
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
 
@@ -191,15 +210,17 @@ h1.shrunk {
 
 #email_link:hover #env_icon {
     opacity: 0;
-    /*-webkit-transform: rotate(45deg);*/
-    /*-moz-transform: rotate(45deg);*/
-    /*-ms-transform: rotate(45deg);*/
-    /*-o-transform: rotate(45deg);*/
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
 #email_link:hover #plane_icon {
     opacity: 100;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 
@@ -220,6 +241,8 @@ h1.shrunk {
 #fbf_icon {
     margin-top: -0.1em;
     margin-left: 0.1em;
+    -webkit-transition: margin-top 0.2s;
+    -moz-transition: margin-top 0.2s;
     transition: margin-top 0.2s;
 }
 
@@ -291,7 +314,7 @@ h1.shrunk {
 /*******************/
 /*******************/
 
-@media (orientation: portrait), (max-width: 800px) {
+@media screen and (max-width: 800px) {
     
     .hide_mobile {
         display: none;
