@@ -131,6 +131,7 @@ h1.shrunk {
     line-height: 3rem;
     padding-right: 0.5rem;
     /*transition: all 0.3s;*/
+    z-index: 10;
 }
 
 #top_nav a {
