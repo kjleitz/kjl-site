@@ -387,7 +387,7 @@ h1.shrunk {
         top: 3rem;
     }
     
-    #top_nav.collapsed {
+    #top_nav.expanded {
         display: block;
         /*height: auto;*/
     }

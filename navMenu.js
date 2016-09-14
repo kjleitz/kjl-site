@@ -1,8 +1,8 @@
 var burgerIcon = document.getElementById("burger_icon");
 
 burgerIcon.onclick = function(){
-    toggleClassById("top_nav", "collapsed");
-}
+    toggleClassById("top_nav", "expanded");
+};
 
 window.addEventListener("click", function(event){
     var ep = Element.prototype;
@@ -21,6 +21,9 @@ window.addEventListener("click", function(event){
     
     if(!(event.target.matches("#burger_icon") ||
          event.target.matches("#top_nav a"))){
-        remClassById("top_nav", "collapsed");
-    }
+             // Maybe I should just use the class hook and collapse all the
+             // elements that are "expandable", in case I decide to make more
+             // dropdowns... not necessary right now.
+             remClassById("top_nav", "expanded");
+         }
 });
